@@ -14,7 +14,7 @@ import { createAppKit, defaultWagmiConfig, AppKit } from '@reown/appkit-wagmi-re
 const queryClient = new QueryClient()
 
 // 1. Get projectId at https://cloud.reown.com
-const projectId = '88bb2cc9604bf48d07d03b2216e3bac9'
+const projectId = '<YOUR_REOWN_PROJECTID>'
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
