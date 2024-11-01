@@ -1,10 +1,10 @@
+import '@walletconnect/react-native-compat'
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
-import '@walletconnect/react-native-compat'
 import { WagmiProvider } from 'wagmi'
 import { mainnet, polygon } from '@wagmi/core/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -27,7 +27,7 @@ const metadata = {
   url: 'https://www.custosdiretriz.com/',
   icons: ['https://www.custosdiretriz.com/ecllipse.png'],
   redirect: {
-    native: 'custos-diretriz://',
+    // native: 'custos-diretriz://',
     universal: 'custosdiretriz.com'
   }
 }

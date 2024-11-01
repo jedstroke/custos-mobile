@@ -92,7 +92,9 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         opacity: 0.5,
     },
-    wrapper: {},
+    wrapper: {
+        height: '100%'
+    },
     slideContainer: {
         flex: 1,
         justifyContent: 'center',

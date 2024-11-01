@@ -50,11 +50,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginHorizontal: 'auto',
+        zIndex: 2,
         fontFamily: "Outfit-Regular"
     },
     buttonContainer: {
         width: '100%',
         height: 64,
+        fontFamily: "Outfit-Regular",
         borderRadius: 32,
         overflow: 'hidden',
         ...Platform.select({
@@ -79,6 +81,7 @@ const styles = StyleSheet.create({
     text: {
         color: 'white',
         fontSize: 20,
+        fontFamily: "Outfit-Regular",
         fontWeight: '600',
         marginRight: 8,
     },
