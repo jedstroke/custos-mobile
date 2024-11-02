@@ -34,8 +34,8 @@ export default function SwiperScreen() {
     const { open } = useAppKit();
 
     const handleConnect = async () => {
-        // await open({ view: 'Connect' });
-        router.push("/(tabs)");
+        await open({ view: 'Connect' });
+        // router.push("/(tabs)");
     };
 
     return (

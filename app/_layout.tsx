@@ -69,18 +69,18 @@ export default function RootLayout() {
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
         <Stack>
-          {/* <Stack.Screen 
+          <Stack.Screen 
             name="index" 
             options={{ 
               headerShown: false 
             }} 
-          /> */}
-          <Stack.Screen 
+          />
+          {/* <Stack.Screen 
             name="(tabs)" 
             options={{ 
               headerShown: false
             }} 
-          />
+          /> */}
         </Stack>
         <AppKit />
       </QueryClientProvider>
