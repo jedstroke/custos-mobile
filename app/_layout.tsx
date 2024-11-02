@@ -26,6 +26,19 @@ const chains = [mainnet, polygon] as const
 
 SplashScreen.preventAutoHideAsync();
 
+const metadata = {
+  name: 'Custos Diretriz',
+  description: 'Custos Diretriz Mobile App',
+  url: 'https://www.custosdiretriz.com/',
+  icons: ['https://www.custosdiretriz.com/ecllipse.png'],
+  redirect: {
+    // native: 'custos-diretriz://',
+    universal: 'custosdiretriz.com'
+  }
+}
+
+const chains = [mainnet, polygon] as const
+
 export default function RootLayout() {
   const [loaded] = useFonts({
     'Outfit-Regular': require('../assets/fonts/Outfit-Regular.ttf'),
@@ -43,6 +56,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (loaded) {
+      console.log('Font loaded successfully');
       SplashScreen.hideAsync();
     }
   }, [loaded]);
